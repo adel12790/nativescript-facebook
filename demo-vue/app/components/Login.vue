@@ -23,7 +23,7 @@
 <script>
 
     import { FacebookLoginButton } from 'nativescript-facebook/vue';
-    import { fromResource } from 'tns-core-modules/image-source';
+    import { fromResource } from '@nativescript/core/image-source';
     import Home from "./Home";
     import {
         login as fbLogin,
@@ -36,9 +36,10 @@
         showMessageDialog,
         canShareDialogShow,
         canMessageDialogShow,
-        logEvent
+        logEvent,
+        logEventValue
     } from 'nativescript-facebook';
-    let appSettings = require('tns-core-modules/application-settings');
+    import * as appSettings from '@nativescript/core/application-settings';
 
     export default {
         created() {
@@ -144,10 +145,11 @@
                 showMessageDialog(this.genericContent);
             },
             logEventAction() {
-                this.eventCounter++;
-                logEvent('Login', [{
-                    key: 'counter',
-                    value: this.eventCounter.toString()
+                alert("event logged");
+
+                logEventValue("fb_mobile_add_to_cart", 25, [{
+                    key: "fb_currency",
+                    value: "EUR"
                 }]);
             }
         }

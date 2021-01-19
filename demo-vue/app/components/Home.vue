@@ -21,8 +21,8 @@
 <script>
     import { logout as fbLogout, getCurrentAccessToken, logEvent } from "nativescript-facebook";
     import Login from "./Login";
-    let appSettings = require("tns-core-modules/application-settings");
-    let http = require("tns-core-modules/http");
+    import * as appSettings from '@nativescript/core/application-settings';
+    import * as http from "@nativescript/core/http";
     let FACEBOOK_GRAPH_API_URL = "https://graph.facebook.com/v2.9";
 
     export default {

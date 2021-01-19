@@ -1,27 +1,33 @@
 {
+  "nativescript": {
+    "id": "org.nativescript.demovue",
+    "tns-android": {
+      "version": "6.2.0"
+    },
+    "tns-ios": {
+      "version": "6.2.0"
+    }
+  },
   "description": "NativeScript Application",
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
   "dependencies": {
     "nativescript-facebook": "../src",
     "nativescript-theme-core": "~1.0.4",
-    "nativescript-vue": "2.8.0",
-    "@nativescript/core": "7.0.0",
-    "@nativescript/webpack": "3.0.0"
+    "nativescript-vue": "~2.4.0",
+    "tns-core-modules": "^6.0.0"
   },
   "devDependencies": {
     "@babel/core": "~7.1.0",
     "@babel/preset-env": "~7.1.0",
-    "@nativescript/android": "7.0.1",
-    "@nativescript/ios": "7.1.0",
     "babel-loader": "~8.0.0",
-    "nativescript-vue-template-compiler": "2.8.0",
+    "nativescript-dev-webpack": "^1.3.0",
+    "nativescript-vue-template-compiler": "~2.4.0",
     "node-sass": "~4.12.0",
-    "typescript": "3.9.7",
-    "vue-loader": "15.9.3"
+    "vue-loader": "~15.4.2",
+    "typescript": "~3.5.3"
   },
   "scripts": {
     "build.plugin": "cd ../src && npm run build"
-  },
-  "main": "app.js"
+  }
 }

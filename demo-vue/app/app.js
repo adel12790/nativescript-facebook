@@ -1,5 +1,5 @@
 import Vue from "nativescript-vue";
-import * as application from 'tns-core-modules/application';
+import * as application from '@nativescript/core/application';
 import Login from "./components/Login";
 
 import {
@@ -13,7 +13,7 @@ Vue.use(FacebookPlugin);
 Vue.config.silent = true;
 
 application.on(application.launchEvent, function (args) {
-    init("1771472059772879");    
+    init("1065835753932828");    
     initAnalytics();
 });
 
