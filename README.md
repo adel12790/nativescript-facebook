@@ -628,22 +628,17 @@ const parameters = [{
 nsFacebook.logEvent(FundsAdded, parameters);
 ```
 
-Events logging:
+Events logging with values:
 
 ```Typescript
-nsFacebook.logEvent('Lead');
-```
-
-Logging event with parameters:
-
-```Typescript
+const name = "fb_mobile_add_to_cart";
 const value = 5;
 const parameters = [{
-    key: 'value',
+    key: 'fb_currency',
     value: value.toString(),
 }];
 
-nsFacebook.logEvent(FundsAdded, parameters);
+nsFacebook.logEventValue(name, value, parameters);
 ```
 ## Deep Linking
 The plugin supports Deep Linking. You must register the callback before the application is started:
