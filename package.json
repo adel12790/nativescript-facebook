@@ -1,0 +1,29 @@
+{
+  "name": "nativescript-facebook-7",
+  "version": "7.0.1",
+  "description": "NativeScript plugin, wrapper of native Facebook SDK for Android and iOS. Compatible with NS7.",
+  "directories": {
+    "test": "tests"
+  },
+  "nativescript": {
+    "platforms": {
+        "ios": "6.0.0",
+        "android": "6.0.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adel12790/nativescript-facebook.git"
+  },
+  "keywords": [
+    "Nativescript",
+    "nativescript",
+    "facebook"
+  ],
+  "author": "Mohamed Adel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adel12790/nativescript-facebook/issues"
+  },
+  "homepage": "https://github.com/adel12790/nativescript-facebook#readme"
+}
