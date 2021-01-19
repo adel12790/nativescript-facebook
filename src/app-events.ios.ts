@@ -1,8 +1,8 @@
-let application = require("tns-core-modules/application");
+import * as application from "@nativescript/core/application";
 let iosApplication;
 let appEventsLogger;
 export function initAnalytics() {
-    iosApplication = application.iosApplication;
+    iosApplication = application.ios;
     FBSDKAppEvents.activateApp();
 }
 
