@@ -15,8 +15,9 @@
         "plugins": [{
             "transform": "@nativescript/webpack/transformers/ns-transform-native-classes",
             "type": "raw"
-          }]
+        }],
     },
+    "include": ["**/*.ts", "references.d.ts"],
     "exclude": [
         "node_modules",
         "platforms",

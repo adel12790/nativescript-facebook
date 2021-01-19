@@ -1,4 +1,17 @@
 {
-    "name": "nativescript-facebook",
-    "main": "index.js"
+    "name": "nativescript-facebook-angular",
+    "main": "index.js",
+    "ngPackage": {
+		"lib": {
+			"entryFile": "index.ts",
+			"umdModuleIds": {
+				"@nativescript/core": "ns-core",
+				"@nativescript/angular": "ns-angular",
+				"@nativescript-facebook": "../"
+			}
+		},
+		"whitelistedNonPeerDependencies": [
+			"."
+		]
+	}
 }
