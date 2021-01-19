@@ -281,6 +281,7 @@ declare module com {
 
 declare module com {
 	export module facebook {
+		@NativeClass()
 		export class FacebookCallback<RESULT>  extends java.lang.Object {
 			public static class: java.lang.Class<com.facebook.FacebookCallback<any>>;
 			/**
@@ -318,6 +319,7 @@ declare module com {
 
 declare module com {
 	export module facebook {
+		@NativeClass()
 		export class FacebookDialog<CONTENT, RESULT>  extends java.lang.Object {
 			public static class: java.lang.Class<com.facebook.FacebookDialog<any,any>>;
 			/**
@@ -680,6 +682,8 @@ declare module com {
 				public onCompleted(param0: com.facebook.GraphResponse): void;
 				public onProgress(param0: number, param1: number): void;
 			}
+
+			@NativeClass()
 			export class ParcelableResourceWithMimeType<RESOURCE>  extends globalAndroid.os.Parcelable {
 				public static class: java.lang.Class<com.facebook.GraphRequest.ParcelableResourceWithMimeType<any>>;
 				public static CREATOR: globalAndroid.os.Parcelable.Creator<com.facebook.GraphRequest.ParcelableResourceWithMimeType<any>>;
@@ -710,6 +714,7 @@ declare module com {
 
 declare module com {
 	export module facebook {
+		@NativeClass()
 		export class GraphRequestAsyncTask extends globalAndroid.os.AsyncTask<java.lang.Void,java.lang.Void,java.util.List<com.facebook.GraphResponse>> {
 			public static class: java.lang.Class<com.facebook.GraphRequestAsyncTask>;
 			public constructor(param0: java.net.HttpURLConnection, param1: native.Array<com.facebook.GraphRequest>);
@@ -730,6 +735,7 @@ declare module com {
 
 declare module com {
 	export module facebook {
+		@NativeClass()
 		export class GraphRequestBatch extends java.util.AbstractList<com.facebook.GraphRequest> {
 			public static class: java.lang.Class<com.facebook.GraphRequestBatch>;
 			public clear(): void;
@@ -2301,6 +2307,7 @@ declare module com {
 				public static iterate(param0: com.facebook.internal.CollectionMapper.Collection<any>, param1: com.facebook.internal.CollectionMapper.ValueMapper, param2: com.facebook.internal.CollectionMapper.OnMapperCompleteListener): void;
 			}
 			export module CollectionMapper {
+				@NativeClass()
 				export class Collection<T>  extends java.lang.Object {
 					public static class: java.lang.Class<com.facebook.internal.CollectionMapper.Collection<any>>;
 					/**
@@ -2664,6 +2671,7 @@ declare module com {
 					public static class: java.lang.Class<com.facebook.internal.FileLruCache.Limits>;
 					public constructor();
 				}
+				@NativeClass()
 				export class ModifiedFile extends java.lang.Comparable<com.facebook.internal.FileLruCache.ModifiedFile> {
 					public static class: java.lang.Class<com.facebook.internal.FileLruCache.ModifiedFile>;
 					public equals(param0: any): boolean;
@@ -2822,6 +2830,7 @@ declare module com {
 declare module com {
 	export module facebook {
 		export module internal {
+			@NativeClass()
 			export class LockOnGetVariable<T>  extends java.lang.Object {
 				public static class: java.lang.Class<com.facebook.internal.LockOnGetVariable<any>>;
 				public constructor(param0: T);
@@ -2876,6 +2885,7 @@ declare module com {
 declare module com {
 	export module facebook {
 		export module internal {
+			@NativeClass()
 			export class Mutable<T>  extends java.lang.Object {
 				public static class: java.lang.Class<com.facebook.internal.Mutable<any>>;
 				public value: T;
@@ -3287,6 +3297,7 @@ declare module com {
 					public onFailure(param0: com.facebook.FacebookException): void;
 					public onSuccess(param0: org.json.JSONObject): void;
 				}
+				@NativeClass()
 				export class Mapper<T, K>  extends java.lang.Object {
 					public static class: java.lang.Class<com.facebook.internal.Utility.Mapper<any,any>>;
 					/**
@@ -3304,6 +3315,7 @@ declare module com {
 					public getDeclinedPermissions(): java.util.List<string>;
 					public getGrantedPermissions(): java.util.List<string>;
 				}
+				@NativeClass()
 				export class Predicate<T>  extends java.lang.Object {
 					public static class: java.lang.Class<com.facebook.internal.Utility.Predicate<any>>;
 					/**
@@ -3418,6 +3430,7 @@ declare module com {
 					public constructor();
 					public onComplete(param0: globalAndroid.os.Bundle, param1: com.facebook.FacebookException): void;
 				}
+				@NativeClass()
 				export class UploadStagingResourcesTask extends globalAndroid.os.AsyncTask<java.lang.Void,java.lang.Void,native.Array<string>> {
 					public static class: java.lang.Class<com.facebook.internal.WebDialog.UploadStagingResourcesTask>;
 					public doInBackground(param0: native.Array<java.lang.Void>): native.Array<string>;
@@ -4188,6 +4201,7 @@ declare module com {
 				public unschedule(): void;
 			}
 			export module ViewIndexer {
+				@NativeClass()
 				export class ScreenshotTaker extends java.util.concurrent.Callable<string> {
 					public static class: java.lang.Class<com.facebook.marketing.ViewIndexer.ScreenshotTaker>;
 					public call(): string;
@@ -5167,6 +5181,7 @@ declare module com {
 declare module com {
 	export module facebook {
 		export module share {
+			@NativeClass()
 			export class ShareBuilder<P, E>  extends java.lang.Object {
 				public static class: java.lang.Class<com.facebook.share.ShareBuilder<any,any>>;
 				/**

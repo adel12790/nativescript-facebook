@@ -10,6 +10,7 @@ export * from './deep-linking';
 declare interface UIApplicationDelegate { }
 
 // TODO: Extend existing delegate if exists
+@NativeClass()
 class BaseDelegate extends UIResponder implements UIApplicationDelegate {
   public static ObjCProtocols = [UIApplicationDelegate];
 

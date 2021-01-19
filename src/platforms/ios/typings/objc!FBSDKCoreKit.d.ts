@@ -1,4 +1,5 @@
-
+@NativeClass()
+@Interfaces(NSSecureCoding)
 declare class FBSDKAccessToken extends NSObject implements FBSDKCopying, NSSecureCoding {
 
 	static alloc(): FBSDKAccessToken; // inherited from NSObject
@@ -240,6 +241,7 @@ declare var FBSDKAppEventState: string;
 
 declare var FBSDKAppEventZip: string;
 
+@NativeClass()
 declare class FBSDKAppEvents extends NSObject {
 
 	static activateApp(): void;
@@ -316,6 +318,7 @@ declare var FBSDKAppEventsLoggingResultNotification: string;
 
 declare var FBSDKAppEventsOverrideAppIDBundleKey: string;
 
+@NativeClass()
 declare class FBSDKAppLink extends NSObject {
 
 	static alloc(): FBSDKAppLink; // inherited from NSObject
@@ -337,6 +340,7 @@ declare var FBSDKAppLinkNavigateInEventName: string;
 
 declare var FBSDKAppLinkNavigateOutEventName: string;
 
+@NativeClass()
 declare class FBSDKAppLinkNavigation extends NSObject {
 
 	static alloc(): FBSDKAppLinkNavigation; // inherited from NSObject
@@ -383,6 +387,7 @@ declare const enum FBSDKAppLinkNavigationType {
 
 declare var FBSDKAppLinkParseEventName: string;
 
+@NativeClass()
 declare class FBSDKAppLinkResolver extends NSObject implements FBSDKAppLinkResolving {
 
 	static alloc(): FBSDKAppLinkResolver; // inherited from NSObject
@@ -430,6 +435,7 @@ declare class FBSDKAppLinkResolver extends NSObject implements FBSDKAppLinkResol
 	self(): this;
 }
 
+@NativeClass()
 interface FBSDKAppLinkResolving extends NSObjectProtocol {
 
 	appLinkFromURLHandler(url: NSURL, handler: (p1: FBSDKAppLink, p2: NSError) => void): void;
@@ -439,6 +445,7 @@ declare var FBSDKAppLinkResolving: {
 	prototype: FBSDKAppLinkResolving;
 };
 
+@NativeClass()
 declare class FBSDKAppLinkReturnToRefererController extends NSObject implements FBSDKAppLinkReturnToRefererViewDelegate {
 
 	static alloc(): FBSDKAppLinkReturnToRefererController; // inherited from NSObject
@@ -500,6 +507,7 @@ declare class FBSDKAppLinkReturnToRefererController extends NSObject implements 
 	showViewForRefererURL(url: NSURL): void;
 }
 
+@NativeClass()
 interface FBSDKAppLinkReturnToRefererControllerDelegate extends NSObjectProtocol {
 
 	returnToRefererControllerDidNavigateToAppLinkType?(controller: FBSDKAppLinkReturnToRefererController, url: FBSDKAppLink, type: FBSDKAppLinkNavigationType): void;
@@ -511,6 +519,7 @@ declare var FBSDKAppLinkReturnToRefererControllerDelegate: {
 	prototype: FBSDKAppLinkReturnToRefererControllerDelegate;
 };
 
+@NativeClass()
 declare class FBSDKAppLinkReturnToRefererView extends UIView {
 
 	static alloc(): FBSDKAppLinkReturnToRefererView; // inherited from NSObject
@@ -540,6 +549,7 @@ declare class FBSDKAppLinkReturnToRefererView extends UIView {
 	textColor: UIColor;
 }
 
+@NativeClass()
 interface FBSDKAppLinkReturnToRefererViewDelegate extends NSObjectProtocol {
 
 	returnToRefererViewDidTapInsideCloseButton(view: FBSDKAppLinkReturnToRefererView): void;
@@ -551,6 +561,7 @@ declare var FBSDKAppLinkReturnToRefererViewDelegate: {
 	prototype: FBSDKAppLinkReturnToRefererViewDelegate;
 };
 
+@NativeClass()
 declare class FBSDKAppLinkTarget extends NSObject {
 
 	static alloc(): FBSDKAppLinkTarget; // inherited from NSObject
@@ -566,6 +577,7 @@ declare class FBSDKAppLinkTarget extends NSObject {
 	readonly appStoreId: string;
 }
 
+@NativeClass()
 declare class FBSDKAppLinkUtility extends NSObject {
 
 	static alloc(): FBSDKAppLinkUtility; // inherited from NSObject
@@ -579,6 +591,7 @@ declare class FBSDKAppLinkUtility extends NSObject {
 
 declare var FBSDKAppLinkVersion: string;
 
+@NativeClass()
 declare class FBSDKApplicationDelegate extends NSObject {
 
 	static alloc(): FBSDKApplicationDelegate; // inherited from NSObject
@@ -596,6 +609,7 @@ declare class FBSDKApplicationDelegate extends NSObject {
 	applicationOpenURLSourceApplicationAnnotation(application: UIApplication, url: NSURL, sourceApplication: string, annotation: any): boolean;
 }
 
+@NativeClass()
 declare class FBSDKBasicUtility extends NSObject {
 
 	static alloc(): FBSDKBasicUtility; // inherited from NSObject
@@ -603,6 +617,7 @@ declare class FBSDKBasicUtility extends NSObject {
 	static new(): FBSDKBasicUtility; // inherited from NSObject
 }
 
+@NativeClass()
 declare class FBSDKButton extends UIButton {
 
 	static alloc(): FBSDKButton; // inherited from NSObject
@@ -624,6 +639,7 @@ declare class FBSDKButton extends UIButton {
 	static new(): FBSDKButton; // inherited from NSObject
 }
 
+@NativeClass()
 interface FBSDKCopying extends NSCopying, NSObjectProtocol {
 
 	copy(): any;
@@ -680,6 +696,7 @@ declare var FBSDKErrorLocalizedDescriptionKey: string;
 
 declare var FBSDKErrorLocalizedTitleKey: string;
 
+@NativeClass()
 interface FBSDKErrorRecoveryAttempting extends NSObjectProtocol {
 
 	attemptRecoveryFromErrorOptionIndexDelegateDidRecoverSelectorContextInfo(error: NSError, recoveryOptionIndex: number, delegate: any, didRecoverSelector: string, contextInfo: interop.Pointer | interop.Reference<any>): void;
@@ -689,6 +706,7 @@ declare var FBSDKErrorRecoveryAttempting: {
 	prototype: FBSDKErrorRecoveryAttempting;
 };
 
+@NativeClass()
 declare class FBSDKGraphErrorRecoveryProcessor extends NSObject {
 
 	static alloc(): FBSDKGraphErrorRecoveryProcessor; // inherited from NSObject
@@ -702,6 +720,7 @@ declare class FBSDKGraphErrorRecoveryProcessor extends NSObject {
 	processErrorRequestDelegate(error: NSError, request: FBSDKGraphRequest, delegate: FBSDKGraphErrorRecoveryProcessorDelegate): boolean;
 }
 
+@NativeClass()
 interface FBSDKGraphErrorRecoveryProcessorDelegate extends NSObjectProtocol {
 
 	processorDidAttemptRecoveryDidRecoverError(processor: FBSDKGraphErrorRecoveryProcessor, didRecover: boolean, error: NSError): void;
@@ -713,6 +732,7 @@ declare var FBSDKGraphErrorRecoveryProcessorDelegate: {
 	prototype: FBSDKGraphErrorRecoveryProcessorDelegate;
 };
 
+@NativeClass()
 declare class FBSDKGraphRequest extends NSObject {
 
 	static alloc(): FBSDKGraphRequest; // inherited from NSObject
@@ -754,6 +774,7 @@ declare class FBSDKGraphRequest extends NSObject {
 	startWithCompletionHandler(handler: (p1: FBSDKGraphRequestConnection, p2: any, p3: NSError) => void): FBSDKGraphRequestConnection;
 }
 
+@NativeClass()
 declare class FBSDKGraphRequestConnection extends NSObject {
 
 	static alloc(): FBSDKGraphRequestConnection; // inherited from NSObject
@@ -783,6 +804,7 @@ declare class FBSDKGraphRequestConnection extends NSObject {
 	start(): void;
 }
 
+@NativeClass()
 interface FBSDKGraphRequestConnectionDelegate extends NSObjectProtocol {
 
 	requestConnectionDidFailWithError?(connection: FBSDKGraphRequestConnection, error: NSError): void;
@@ -798,6 +820,7 @@ declare var FBSDKGraphRequestConnectionDelegate: {
 	prototype: FBSDKGraphRequestConnectionDelegate;
 };
 
+@NativeClass()
 declare class FBSDKGraphRequestDataAttachment extends NSObject {
 
 	static alloc(): FBSDKGraphRequestDataAttachment; // inherited from NSObject
@@ -867,6 +890,7 @@ declare var FBSDKLoggingBehaviorPerformanceCharacteristics: string;
 
 declare var FBSDKLoggingBehaviorUIControlErrors: string;
 
+@NativeClass()
 declare class FBSDKMeasurementEvent extends NSObject {
 
 	static alloc(): FBSDKMeasurementEvent; // inherited from NSObject
@@ -880,6 +904,7 @@ declare var FBSDKMeasurementEventNameKey: string;
 
 declare var FBSDKMeasurementEventNotification: string;
 
+@NativeClass()
 interface FBSDKMutableCopying extends FBSDKCopying, NSMutableCopying {
 
 	mutableCopy(): any;
@@ -913,6 +938,8 @@ declare const enum FBSDKProductCondition {
 	Used = 2
 }
 
+@NativeClass()
+@Interfaces(NSSecureCoding)
 declare class FBSDKProfile extends NSObject implements NSCopying, NSSecureCoding {
 
 	static alloc(): FBSDKProfile; // inherited from NSObject
@@ -971,6 +998,7 @@ declare const enum FBSDKProfilePictureMode {
 	Normal = 1
 }
 
+@NativeClass()
 declare class FBSDKProfilePictureView extends UIView {
 
 	static alloc(): FBSDKProfilePictureView; // inherited from NSObject
@@ -996,6 +1024,7 @@ declare class FBSDKProfilePictureView extends UIView {
 	setNeedsImageUpdate(): void;
 }
 
+@NativeClass()
 declare class FBSDKSettings extends NSObject {
 
 	static alloc(): FBSDKSettings; // inherited from NSObject
@@ -1039,6 +1068,7 @@ declare class FBSDKSettings extends NSObject {
 	static readonly sdkVersion: string;
 }
 
+@NativeClass()
 declare class FBSDKTestUsersManager extends NSObject {
 
 	static alloc(): FBSDKTestUsersManager; // inherited from NSObject
@@ -1056,6 +1086,7 @@ declare class FBSDKTestUsersManager extends NSObject {
 	requestTestAccountTokensWithArraysOfPermissionsCreateIfNotFoundCompletionHandler(arraysOfPermissions: NSArray<NSSet<string>> | NSSet<string>[], createIfNotFound: boolean, handler: (p1: NSArray<FBSDKAccessToken>, p2: NSError) => void): void;
 }
 
+@NativeClass()
 declare class FBSDKURL extends NSObject {
 
 	static URLWithInboundURLSourceApplication(url: NSURL, sourceApplication: string): FBSDKURL;
@@ -1081,6 +1112,7 @@ declare class FBSDKURL extends NSObject {
 	readonly targetURL: NSURL;
 }
 
+@NativeClass()
 declare class FBSDKUtility extends NSObject {
 
 	static SHA256Hash(input: NSObject): string;
@@ -1102,6 +1134,7 @@ declare class FBSDKUtility extends NSObject {
 	static stopGCDTimer(timer: NSObject): void;
 }
 
+@NativeClass()
 declare class FBSDKWebViewAppLinkResolver extends NSObject implements FBSDKAppLinkResolving {
 
 	static alloc(): FBSDKWebViewAppLinkResolver; // inherited from NSObject

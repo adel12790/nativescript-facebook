@@ -1,4 +1,5 @@
-
+@NativeClass()
+@Interfaces(NSSecureCoding)
 declare class FBSDKAppGroupContent extends NSObject implements FBSDKCopying, NSSecureCoding {
 
 	static alloc(): FBSDKAppGroupContent; // inherited from NSObject
@@ -67,6 +68,8 @@ declare const enum FBSDKAppGroupPrivacy {
 	Closed = 1
 }
 
+@NativeClass()
+@Interfaces(NSSecureCoding)
 declare class FBSDKAppInviteContent extends NSObject implements FBSDKCopying, FBSDKSharingValidation, NSSecureCoding {
 
 	static alloc(): FBSDKAppInviteContent; // inherited from NSObject
@@ -141,6 +144,8 @@ declare const enum FBSDKAppInviteDestination {
 	Messenger = 1
 }
 
+@NativeClass()
+@Interfaces(NSSecureCoding)
 declare class FBSDKCameraEffectArguments extends NSObject implements FBSDKCopying, NSSecureCoding {
 
 	static alloc(): FBSDKCameraEffectArguments; // inherited from NSObject
@@ -202,6 +207,8 @@ declare class FBSDKCameraEffectArguments extends NSObject implements FBSDKCopyin
 	stringForKey(key: string): string;
 }
 
+@NativeClass()
+@Interfaces(NSSecureCoding)
 declare class FBSDKCameraEffectTextures extends NSObject implements FBSDKCopying, NSSecureCoding {
 
 	static alloc(): FBSDKCameraEffectTextures; // inherited from NSObject
@@ -270,6 +277,8 @@ declare const enum FBSDKGameRequestActionType {
 	Turn = 3
 }
 
+@NativeClass()
+@Interfaces(NSSecureCoding)
 declare class FBSDKGameRequestContent extends NSObject implements FBSDKCopying, FBSDKSharingValidation, NSSecureCoding {
 
 	static alloc(): FBSDKGameRequestContent; // inherited from NSObject
@@ -343,6 +352,7 @@ declare class FBSDKGameRequestContent extends NSObject implements FBSDKCopying, 
 	validateWithOptionsError(bridgeOptions: FBSDKShareBridgeOptions): boolean;
 }
 
+@NativeClass()
 declare class FBSDKGameRequestDialog extends NSObject {
 
 	static alloc(): FBSDKGameRequestDialog; // inherited from NSObject
@@ -366,6 +376,7 @@ declare class FBSDKGameRequestDialog extends NSObject {
 	validateWithError(): boolean;
 }
 
+@NativeClass()
 interface FBSDKGameRequestDialogDelegate extends NSObjectProtocol {
 
 	gameRequestDialogDidCancel(gameRequestDialog: FBSDKGameRequestDialog): void;
@@ -388,6 +399,8 @@ declare const enum FBSDKGameRequestFilter {
 	AppNonUsers = 2
 }
 
+@NativeClass()
+@Interfaces(NSSecureCoding)
 declare class FBSDKHashtag extends NSObject implements FBSDKCopying, NSSecureCoding {
 
 	static alloc(): FBSDKHashtag; // inherited from NSObject
@@ -458,6 +471,7 @@ declare const enum FBSDKLikeObjectType {
 	Page = 2
 }
 
+@NativeClass()
 interface FBSDKLiking extends NSObjectProtocol {
 
 	objectID: string;
@@ -469,6 +483,7 @@ declare var FBSDKLiking: {
 	prototype: FBSDKLiking;
 };
 
+@NativeClass()
 declare class FBSDKMessageDialog extends NSObject implements FBSDKSharingDialog {
 
 	static alloc(): FBSDKMessageDialog; // inherited from NSObject
@@ -583,6 +598,7 @@ declare class FBSDKSendButton extends FBSDKButton implements FBSDKSharingButton 
 	self(): this;
 }
 
+@NativeClass()
 declare class FBSDKShareAPI extends NSObject implements FBSDKSharing {
 
 	static alloc(): FBSDKShareAPI; // inherited from NSObject
@@ -720,6 +736,7 @@ declare class FBSDKShareButton extends FBSDKButton implements FBSDKSharingButton
 	self(): this;
 }
 
+@NativeClass()
 declare class FBSDKShareCameraEffectContent extends NSObject implements FBSDKSharingContent, FBSDKSharingScheme {
 
 	static alloc(): FBSDKShareCameraEffectContent; // inherited from NSObject
@@ -801,6 +818,7 @@ declare class FBSDKShareCameraEffectContent extends NSObject implements FBSDKSha
 	validateWithOptionsError(bridgeOptions: FBSDKShareBridgeOptions): boolean;
 }
 
+@NativeClass()
 declare class FBSDKShareDialog extends NSObject implements FBSDKSharingDialog {
 
 	static alloc(): FBSDKShareDialog; // inherited from NSObject
@@ -896,6 +914,7 @@ declare var FBSDKShareKitVersionNumber: number;
 
 declare var FBSDKShareKitVersionString: interop.Reference<number>;
 
+@NativeClass()
 declare class FBSDKShareLinkContent extends NSObject implements FBSDKSharingContent {
 
 	static alloc(): FBSDKShareLinkContent; // inherited from NSObject
@@ -971,6 +990,7 @@ declare class FBSDKShareLinkContent extends NSObject implements FBSDKSharingCont
 	validateWithOptionsError(bridgeOptions: FBSDKShareBridgeOptions): boolean;
 }
 
+@NativeClass()
 interface FBSDKShareMedia extends NSObjectProtocol {
 }
 declare var FBSDKShareMedia: {
@@ -978,6 +998,7 @@ declare var FBSDKShareMedia: {
 	prototype: FBSDKShareMedia;
 };
 
+@NativeClass()
 declare class FBSDKShareMediaContent extends NSObject implements FBSDKSharingContent {
 
 	static alloc(): FBSDKShareMediaContent; // inherited from NSObject
@@ -1053,6 +1074,7 @@ declare class FBSDKShareMediaContent extends NSObject implements FBSDKSharingCon
 	validateWithOptionsError(bridgeOptions: FBSDKShareBridgeOptions): boolean;
 }
 
+@NativeClass()
 interface FBSDKShareMessengerActionButton extends FBSDKCopying, NSSecureCoding {
 
 	title: string;
@@ -1062,6 +1084,7 @@ declare var FBSDKShareMessengerActionButton: {
 	prototype: FBSDKShareMessengerActionButton;
 };
 
+@NativeClass()
 declare class FBSDKShareMessengerGenericTemplateContent extends NSObject implements FBSDKSharingContent {
 
 	static alloc(): FBSDKShareMessengerGenericTemplateContent; // inherited from NSObject
@@ -1139,6 +1162,8 @@ declare class FBSDKShareMessengerGenericTemplateContent extends NSObject impleme
 	validateWithOptionsError(bridgeOptions: FBSDKShareBridgeOptions): boolean;
 }
 
+@NativeClass()
+@Interfaces(NSSecureCoding)
 declare class FBSDKShareMessengerGenericTemplateElement extends NSObject implements FBSDKCopying, NSSecureCoding {
 
 	static alloc(): FBSDKShareMessengerGenericTemplateElement; // inherited from NSObject
@@ -1209,6 +1234,7 @@ declare const enum FBSDKShareMessengerGenericTemplateImageAspectRatio {
 	Square = 1
 }
 
+@NativeClass()
 declare class FBSDKShareMessengerMediaTemplateContent extends NSObject implements FBSDKSharingContent {
 
 	static alloc(): FBSDKShareMessengerMediaTemplateContent; // inherited from NSObject
@@ -1303,6 +1329,7 @@ declare const enum FBSDKShareMessengerMediaTemplateMediaType {
 	Video = 1
 }
 
+@NativeClass()
 declare class FBSDKShareMessengerOpenGraphMusicTemplateContent extends NSObject implements FBSDKSharingContent {
 
 	static alloc(): FBSDKShareMessengerOpenGraphMusicTemplateContent; // inherited from NSObject
@@ -1378,6 +1405,7 @@ declare class FBSDKShareMessengerOpenGraphMusicTemplateContent extends NSObject 
 	validateWithOptionsError(bridgeOptions: FBSDKShareBridgeOptions): boolean;
 }
 
+@NativeClass()
 declare class FBSDKShareMessengerURLActionButton extends NSObject implements FBSDKShareMessengerActionButton {
 
 	static alloc(): FBSDKShareMessengerURLActionButton; // inherited from NSObject
@@ -1452,6 +1480,7 @@ declare const enum FBSDKShareMessengerURLActionButtonWebviewHeightRatio {
 	Compact = 2
 }
 
+@Interfaces(NSSecureCoding)
 declare class FBSDKShareOpenGraphAction extends FBSDKShareOpenGraphValueContainer implements FBSDKCopying, NSSecureCoding {
 
 	static actionWithTypeObjectIDKey(actionType: string, objectID: string, key: string): FBSDKShareOpenGraphAction;
@@ -1519,6 +1548,7 @@ declare class FBSDKShareOpenGraphAction extends FBSDKShareOpenGraphValueContaine
 	self(): this;
 }
 
+@NativeClass()
 declare class FBSDKShareOpenGraphContent extends NSObject implements FBSDKSharingContent {
 
 	static alloc(): FBSDKShareOpenGraphContent; // inherited from NSObject
@@ -1596,6 +1626,7 @@ declare class FBSDKShareOpenGraphContent extends NSObject implements FBSDKSharin
 	validateWithOptionsError(bridgeOptions: FBSDKShareBridgeOptions): boolean;
 }
 
+@Interfaces(NSSecureCoding)
 declare class FBSDKShareOpenGraphObject extends FBSDKShareOpenGraphValueContainer implements FBSDKCopying, NSSecureCoding {
 
 	static alloc(): FBSDKShareOpenGraphObject; // inherited from NSObject
@@ -1653,6 +1684,7 @@ declare class FBSDKShareOpenGraphObject extends FBSDKShareOpenGraphValueContaine
 	self(): this;
 }
 
+@NativeClass()
 declare class FBSDKShareOpenGraphValueContainer extends NSObject implements FBSDKShareOpenGraphValueContaining {
 
 	static alloc(): FBSDKShareOpenGraphValueContainer; // inherited from NSObject
@@ -1740,6 +1772,7 @@ declare class FBSDKShareOpenGraphValueContainer extends NSObject implements FBSD
 	stringForKey(key: string): string;
 }
 
+@NativeClass()
 interface FBSDKShareOpenGraphValueContaining extends NSObjectProtocol, NSSecureCoding {
 
 	allProperties: NSDictionary<string, any>;
@@ -1785,6 +1818,8 @@ declare var FBSDKShareOpenGraphValueContaining: {
 	prototype: FBSDKShareOpenGraphValueContaining;
 };
 
+@NativeClass()
+@Interfaces(NSSecureCoding)
 declare class FBSDKSharePhoto extends NSObject implements FBSDKCopying, FBSDKShareMedia, FBSDKSharingValidation, NSSecureCoding {
 
 	static alloc(): FBSDKSharePhoto; // inherited from NSObject
@@ -1858,6 +1893,7 @@ declare class FBSDKSharePhoto extends NSObject implements FBSDKCopying, FBSDKSha
 	validateWithOptionsError(bridgeOptions: FBSDKShareBridgeOptions): boolean;
 }
 
+@NativeClass()
 declare class FBSDKSharePhotoContent extends NSObject implements FBSDKSharingContent {
 
 	static alloc(): FBSDKSharePhotoContent; // inherited from NSObject
@@ -1933,6 +1969,8 @@ declare class FBSDKSharePhotoContent extends NSObject implements FBSDKSharingCon
 	validateWithOptionsError(bridgeOptions: FBSDKShareBridgeOptions): boolean;
 }
 
+@NativeClass()
+@Interfaces(NSSecureCoding)
 declare class FBSDKShareVideo extends NSObject implements FBSDKCopying, FBSDKShareMedia, FBSDKSharingValidation, NSSecureCoding {
 
 	static alloc(): FBSDKShareVideo; // inherited from NSObject
@@ -2010,6 +2048,7 @@ declare class FBSDKShareVideo extends NSObject implements FBSDKCopying, FBSDKSha
 	validateWithOptionsError(bridgeOptions: FBSDKShareBridgeOptions): boolean;
 }
 
+@NativeClass()
 declare class FBSDKShareVideoContent extends NSObject implements FBSDKSharingContent {
 
 	static alloc(): FBSDKShareVideoContent; // inherited from NSObject
@@ -2085,6 +2124,7 @@ declare class FBSDKShareVideoContent extends NSObject implements FBSDKSharingCon
 	validateWithOptionsError(bridgeOptions: FBSDKShareBridgeOptions): boolean;
 }
 
+@NativeClass()
 interface FBSDKSharing extends NSObjectProtocol {
 
 	delegate: FBSDKSharingDelegate;
@@ -2100,6 +2140,7 @@ declare var FBSDKSharing: {
 	prototype: FBSDKSharing;
 };
 
+@NativeClass()
 interface FBSDKSharingButton extends NSObjectProtocol {
 
 	shareContent: FBSDKSharingContent;
@@ -2109,6 +2150,7 @@ declare var FBSDKSharingButton: {
 	prototype: FBSDKSharingButton;
 };
 
+@NativeClass()
 interface FBSDKSharingContent extends FBSDKCopying, FBSDKSharingValidation, NSSecureCoding {
 
 	contentURL: NSURL;
@@ -2132,6 +2174,7 @@ declare var FBSDKSharingContent: {
 	prototype: FBSDKSharingContent;
 };
 
+@NativeClass()
 interface FBSDKSharingDelegate extends NSObjectProtocol {
 
 	sharerDidCancel(sharer: FBSDKSharing): void;

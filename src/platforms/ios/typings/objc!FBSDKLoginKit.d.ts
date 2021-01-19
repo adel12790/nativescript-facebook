@@ -8,6 +8,7 @@ declare const enum FBSDKDefaultAudience {
 	Everyone = 2
 }
 
+@NativeClass()
 declare class FBSDKDeviceLoginCodeInfo extends NSObject {
 
 	static alloc(): FBSDKDeviceLoginCodeInfo; // inherited from NSObject
@@ -36,6 +37,8 @@ declare const enum FBSDKDeviceLoginError {
 	CodeExpired = 1349152
 }
 
+@NativeClass()
+@Interfaces(NSNetServiceDelegate)
 declare class FBSDKDeviceLoginManager extends NSObject implements NSNetServiceDelegate {
 
 	static alloc(): FBSDKDeviceLoginManager; // inherited from NSObject
@@ -109,6 +112,7 @@ declare class FBSDKDeviceLoginManager extends NSObject implements NSNetServiceDe
 	start(): void;
 }
 
+@NativeClass()
 interface FBSDKDeviceLoginManagerDelegate extends NSObjectProtocol {
 
 	deviceLoginManagerCompletedWithResultError(loginManager: FBSDKDeviceLoginManager, result: FBSDKDeviceLoginManagerResult, error: NSError): void;
@@ -120,6 +124,7 @@ declare var FBSDKDeviceLoginManagerDelegate: {
 	prototype: FBSDKDeviceLoginManagerDelegate;
 };
 
+@NativeClass()
 declare class FBSDKDeviceLoginManagerResult extends NSObject {
 
 	static alloc(): FBSDKDeviceLoginManagerResult; // inherited from NSObject
@@ -177,6 +182,7 @@ declare class FBSDKLoginButton extends FBSDKButton {
 	tooltipColorStyle: FBSDKTooltipColorStyle;
 }
 
+@NativeClass()
 interface FBSDKLoginButtonDelegate extends NSObjectProtocol {
 
 	loginButtonDidCompleteWithResultError(loginButton: FBSDKLoginButton, result: FBSDKLoginManagerLoginResult, error: NSError): void;
@@ -226,6 +232,7 @@ declare var FBSDKLoginKitVersionNumber: number;
 
 declare var FBSDKLoginKitVersionString: interop.Reference<number>;
 
+@NativeClass()
 declare class FBSDKLoginManager extends NSObject {
 
 	static alloc(): FBSDKLoginManager; // inherited from NSObject
@@ -249,6 +256,7 @@ declare class FBSDKLoginManager extends NSObject {
 	reauthorizeDataAccessHandler(fromViewController: UIViewController, handler: (p1: FBSDKLoginManagerLoginResult, p2: NSError) => void): void;
 }
 
+@NativeClass()
 declare class FBSDKLoginManagerLoginResult extends NSObject {
 
 	static alloc(): FBSDKLoginManagerLoginResult; // inherited from NSObject
@@ -291,6 +299,7 @@ declare class FBSDKLoginTooltipView extends FBSDKTooltipView {
 	forceDisplay: boolean;
 }
 
+@NativeClass()
 interface FBSDKLoginTooltipViewDelegate extends NSObjectProtocol {
 
 	loginTooltipViewShouldAppear?(view: FBSDKLoginTooltipView, appIsEligible: boolean): boolean;
@@ -311,6 +320,7 @@ declare const enum FBSDKTooltipColorStyle {
 	NeutralGray = 1
 }
 
+@NativeClass()
 declare class FBSDKTooltipView extends UIView {
 
 	static alloc(): FBSDKTooltipView; // inherited from NSObject
