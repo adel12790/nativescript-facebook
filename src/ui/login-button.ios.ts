@@ -1,4 +1,4 @@
-import * as applicationModule from "tns-core-modules/application";
+import * as applicationModule from "@nativescript/core/application";
 import { LoginButtonBase } from './login-button.common';
 import * as loginManager from './../login-manager';
 
@@ -27,6 +27,7 @@ export class LoginButton extends LoginButtonBase {
   }
 }
 
+@NativeClass()
 class LoginButtonDelegate extends NSObject implements FBSDKLoginButtonDelegate {
   public static ObjCProtocols = [FBSDKLoginButtonDelegate];
 

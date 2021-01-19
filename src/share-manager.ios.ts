@@ -1,6 +1,6 @@
 export * from './share-manager.common';
 
-import {ImageSource} from 'tns-core-modules/image-source';
+import {ImageSource} from '@nativescript/core/image-source';
 import {
     MessageActionButton,
     MessageGenericTemplateContent,
@@ -10,7 +10,7 @@ import {
     ShareAdditionContent,
     ShareCallbackFunction
 } from './share-manager.common';
-import {topmost} from 'tns-core-modules/ui/frame';
+import {topmost} from '@nativescript/core/ui/frame';
 
 function currentViewController(): any {
     const topView = topmost();
@@ -190,6 +190,7 @@ export function canMessageDialogShow(content: any): boolean {
     return false;
 }
 
+@NativeClass()
 class SharingDelegate extends NSObject implements FBSDKSharingDelegate {
     public static ObjCProtocols = [];
 

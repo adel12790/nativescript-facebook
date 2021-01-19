@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "lib": ["es6", "dom"],
+        "target": "es2017",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "lib": ["es6", "dom", "es2017"],
         "baseUrl": ".",
         "removeComments": true,
         "noLib": false,
@@ -10,7 +11,11 @@
         "experimentalDecorators": true,
         "pretty": true,
         "noEmitHelpers": true,
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "plugins": [{
+            "transform": "@nativescript/webpack/transformers/ns-transform-native-classes",
+            "type": "raw"
+          }]
     },
     "exclude": [
         "node_modules",

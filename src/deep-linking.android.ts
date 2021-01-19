@@ -1,4 +1,4 @@
-import * as application from "tns-core-modules/application";
+import * as application from "@nativescript/core/application";
 import { DeepLink } from './deep-linking.common';
 
 let androidApplication;

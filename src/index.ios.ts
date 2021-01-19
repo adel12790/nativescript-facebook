@@ -1,4 +1,4 @@
-import * as applicationModule from "tns-core-modules/application";
+import * as applicationModule from "@nativescript/core/application";
 export * from "./ui/login-button";
 export * from "./login-manager";
 export * from "./login-event-data";

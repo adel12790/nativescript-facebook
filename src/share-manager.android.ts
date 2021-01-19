@@ -1,7 +1,7 @@
 export * from './share-manager.common';
 
-import {ImageSource} from 'tns-core-modules/image-source';
-import {android as androidApp, AndroidApplication} from 'tns-core-modules/application';
+import {ImageSource} from '@nativescript/core/image-source';
+import {android as androidApp, AndroidApplication} from '@nativescript/core/application';
 import {
     MessageActionButton,
     MessageGenericTemplateContent,

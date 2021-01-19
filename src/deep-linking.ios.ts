@@ -1,7 +1,7 @@
 import {
     DeepLink
 } from './deep-linking.common';
-import { ios } from 'tns-core-modules/application';
+import { ios } from '@nativescript/core/application';
 
 export function initDeepLinking(appId: string) {
     FBSDKSettings.autoInitEnabled = true;

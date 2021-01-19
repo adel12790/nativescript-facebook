@@ -1,4 +1,4 @@
-import * as application from "tns-core-modules/application";
+import * as application from "@nativescript/core/application";
 import { LoginResponse } from './login-response';
 import { FacebookAccessToken } from "./facebook-access-token";
 

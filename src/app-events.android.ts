@@ -1,4 +1,4 @@
-let application = require("tns-core-modules/application");
+let application = require("@nativescript/core");
 let androidApplication;
 let appEventsLogger;
 export function initAnalytics() {
