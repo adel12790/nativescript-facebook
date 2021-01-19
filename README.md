@@ -1,7 +1,7 @@
 NativeScript : Facebook SDK ![apple](https://cdn3.iconfinder.com/data/icons/picons-social/57/16-apple-32.png) ![android](https://cdn4.iconfinder.com/data/icons/logos-3/228/android-32.png)
  =======
-[![npm](https://img.shields.io/npm/v/nativescript-facebook.svg)](https://www.npmjs.com/package/nativescript-facebook)
-[![npm](https://img.shields.io/npm/dm/nativescript-facebook.svg)](https://www.npmjs.com/package/nativescript-facebook)
+[![npm](https://img.shields.io/npm/v/nativescript-facebook.svg)](https://www.npmjs.com/package/nativescript-facebook-7)
+[![npm](https://img.shields.io/npm/dm/nativescript-facebook.svg)](https://www.npmjs.com/package/nativescript-facebook-7)
 [![Build Status](https://travis-ci.org/NativeScript/nativescript-facebook.svg?branch=master)](https://travis-ci.org/NativeScript/nativescript-facebook)
 -------
 
@@ -68,7 +68,7 @@ NativeScript : Facebook SDK ![apple](https://cdn3.iconfinder.com/data/icons/pico
 
 ## Installation
 ```
-tns plugin add nativescript-facebook
+tns plugin add nativescript-facebook-7
 ```
 
 ## Configuration
