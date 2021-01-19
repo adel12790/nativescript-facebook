@@ -1,5 +1,5 @@
 {
-    "name": "nativescript-facebook",
+    "name": "nativescript-facebook-7",
     "version": "7.0.0",
     "description": "NativeScript plugin, wrapper of native Facebook SDK for Android and iOS. Compatible with NS7.",
     "nativescript": {
@@ -27,7 +27,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/NativeScript/nativescript-facebook.git"
+        "url": "git+https://github.com/adel12790/nativescript-facebook.git"
     },
     "keywords": [
         "NativeScript",
@@ -36,13 +36,13 @@
         "iOS",
         "Facebook"
     ],
-    "author": "NativeScript Team",
+    "author": "Mohamed Adel",
     "bugs": {
-        "url": "https://github.com/NativeScript/nativescript-facebook/issues"
+        "url": "https://github.com/adel12790/nativescript-facebook/issues"
     },
     "license": "Apache 2.0",
     "typings": "index.d.ts",
-    "homepage": "https://github.com/NativeScript/nativescript-facebook",
+    "homepage": "https://github.com/adel12790/nativescript-facebook",
     "readmeFilename": "README.md",
     "devDependencies": {
         "@angular/common": "~10.2.4",
