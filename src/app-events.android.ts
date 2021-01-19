@@ -25,7 +25,6 @@ export function logEventValue(name: string, value: number, parameters?: any) {
         throw ("Argument 'name' or 'value' is missing");
     }
 
-    console.log('name', name, 'value', value, 'param', parameters);
     const bundle = new android.os.Bundle();
 
     bundle.putString('_valueToSum', String(value));
