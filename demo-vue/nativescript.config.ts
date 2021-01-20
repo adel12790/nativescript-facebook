@@ -7,7 +7,7 @@ export default {
     v8Flags: '--expose_gc',
     markingMode: 'none',
     requireModules: {
-      0: 'nativescript-facebook',
+      0: 'nativescript-facebook-7',
     },
   },
   appPath: 'app',

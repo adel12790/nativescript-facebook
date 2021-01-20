@@ -5,9 +5,9 @@ import Login from "./components/Login";
 import {
     init,
     initAnalytics,
-} from 'nativescript-facebook';
+} from 'nativescript-facebook-7';
 
-import FacebookPlugin from "nativescript-facebook/vue";
+import FacebookPlugin from "nativescript-facebook-7/vue";
 Vue.use(FacebookPlugin);
 
 Vue.config.silent = true;

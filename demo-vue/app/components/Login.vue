@@ -22,7 +22,7 @@
 
 <script>
 
-    import { FacebookLoginButton } from 'nativescript-facebook/vue';
+    import { FacebookLoginButton } from 'nativescript-facebook-7/vue';
     import { fromResource } from '@nativescript/core/image-source';
     import Home from "./Home";
     import {
@@ -38,7 +38,7 @@
         canMessageDialogShow,
         logEvent,
         logEventValue
-    } from 'nativescript-facebook';
+    } from 'nativescript-facebook-7';
     import * as appSettings from '@nativescript/core/application-settings';
 
     export default {

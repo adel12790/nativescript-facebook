@@ -19,7 +19,7 @@
 </template>
 
 <script>
-    import { logout as fbLogout, getCurrentAccessToken, logEvent } from "nativescript-facebook";
+    import { logout as fbLogout, getCurrentAccessToken, logEvent } from "nativescript-facebook-7";
     import Login from "./Login";
     import * as appSettings from '@nativescript/core/application-settings';
     import * as http from "@nativescript/core/http";

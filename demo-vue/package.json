@@ -3,7 +3,7 @@
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
   "dependencies": {
-    "nativescript-facebook": "../src",
+    "nativescript-facebook-7": "../src",
     "nativescript-theme-core": "~1.0.4",
     "nativescript-vue": "2.8.0",
     "@nativescript/core": "7.0.0",

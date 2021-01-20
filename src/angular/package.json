@@ -7,7 +7,7 @@
 			"umdModuleIds": {
 				"@nativescript/core": "ns-core",
 				"@nativescript/angular": "ns-angular",
-				"@nativescript-facebook": "../"
+				"@nativescript-facebook-7": "../"
 			}
 		},
 		"whitelistedNonPeerDependencies": [
