@@ -7,7 +7,7 @@ NativeScript : Facebook SDK ![apple](https://cdn3.iconfinder.com/data/icons/pico
 
 [NativeScript](https://www.nativescript.org) plugin, wrapper of native [Facebook SDK](https://developers.facebook.com) for Android and iOS.
 
-![demo](https://github.com/nativescript-space/nativescript-facebook/blob/assets/demo.gif?raw=true)
+This plugin is compatible with NativeScript 7+ only.
 
 <!-- TOC depthFrom:2 -->
 
