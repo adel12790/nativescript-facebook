@@ -1,8 +1,8 @@
 NativeScript : Facebook SDK ![apple](https://cdn3.iconfinder.com/data/icons/picons-social/57/16-apple-32.png) ![android](https://cdn4.iconfinder.com/data/icons/logos-3/228/android-32.png)
  =======
-[![npm](https://img.shields.io/npm/v/nativescript-facebook.svg)](https://www.npmjs.com/package/nativescript-facebook-7)
-[![npm](https://img.shields.io/npm/dm/nativescript-facebook.svg)](https://www.npmjs.com/package/nativescript-facebook-7)
-[![Build Status](https://travis-ci.org/NativeScript/nativescript-facebook.svg?branch=master)](https://travis-ci.org/NativeScript/nativescript-facebook)
+[![npm](https://img.shields.io/npm/v/nativescript-facebook-7.svg)](https://www.npmjs.com/package/nativescript-facebook-7)
+[![npm](https://img.shields.io/npm/dm/nativescript-facebook-7.svg)](https://www.npmjs.com/package/nativescript-facebook-7)
+[![Build Status](https://travis-ci.org/NativeScript/nativescript-facebook-7.svg?branch=master)](https://travis-ci.org/NativeScript/nativescript-facebook-7)
 -------
 
 [NativeScript](https://www.nativescript.org) plugin, wrapper of native [Facebook SDK](https://developers.facebook.com) for Android and iOS.
@@ -119,7 +119,7 @@ Call init of nativescript-facebook module on application launch.
 [app.ts](https://github.com/NativeScript/nativescript-facebook/blob/master/demo/app/app.ts)
 ```TypeScript
 import * as application from 'application';
-import { init } from "nativescript-facebook";
+import { init } from "nativescript-facebook-7";
 
 application.on(application.launchEvent, function (args) {
     init("{facebook_app_id}");
@@ -152,7 +152,7 @@ Implement `onLogin` event handler in your view-model. It receives an argument fr
 [login-view-model.ts](https://github.com/NativeScript/nativescript-facebook/blob/master/demo/app/login-view-model.ts)
 ```TypeScript
 import { Observable } from 'data/observable';
-import { Facebook:LoginButton } from "nativescript-facebook";
+import { Facebook:LoginButton } from "nativescript-facebook-7";
 
 export class LoginViewModel extends Observable {
 
@@ -192,7 +192,7 @@ Import only the methods that you need instead of the entire file. It is crucial 
 [login-view-model.ts](https://github.com/NativeScript/nativescript-facebook/blob/master/demo/app/login-view-model.ts)
 ```TypeScript
 import { Observable } from 'data/observable';
-import { login as fbLogin } from "nativescript-facebook";
+import { login as fbLogin } from "nativescript-facebook-7";
 
 export class LoginViewModel extends Observable {
 
@@ -268,7 +268,7 @@ In the view model implement the tap event handler in this case `logout` method. 
 [home-view-model.ts](https://github.com/NativeScript/nativescript-facebook/blob/master/demo/app/home-view-model.ts)
 ```TypeScript
 import { Observable } from 'data/observable';
-import { logout as fbLogout } from "nativescript-facebook";
+import { logout as fbLogout } from "nativescript-facebook-7";
 
 export class LoginViewModel extends Observable {
 
@@ -303,7 +303,7 @@ import {
     showMessageDialog,
     canShareDialogShow,
     canMessageDialogShow
-} from 'nativescript-facebook';
+} from 'nativescript-facebook-7';
 
 const linkContent = createShareLinksContent('https://www.nativescript.org',
             'Create Native iOS and Android Apps With JavaScript',
@@ -380,16 +380,16 @@ public canShowGenericMessageDialog = canMessageDialogShow(this.genericContent);
 
 ## NativeScript Angular
 ### Initialization
-Call init of nativescript-facebook module on application launch.
+Call init of nativescript-facebook-7 module on application launch.
 
 [app.module.ts](https://github.com/NativeScript/nativescript-facebook/blob/master/demo-angular/app/app.module.ts)
 ```TypeScript
 ...
 import * as application from 'application';
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
-import { NativeScriptFacebookModule } from "nativescript-facebook/angular";
+import { NativeScriptFacebookModule } from "nativescript-facebook-7/angular";
 
-let nsFacebook = require('nativescript-facebook');
+let nsFacebook = require('nativescript-facebook-7');
 
 application.on(application.launchEvent, function (args) {
     nsFacebook.init("{facebook_app_id}");
@@ -425,7 +425,7 @@ Implement `onLogin` event handler in your component. It receives an argument fro
 [pages/login/login.component.ts](https://github.com/NativeScript/nativescript-facebook/blob/master/demo-angular/app/pages/login/login.component.ts)
 ```TypeScript
 import { Component } from "@angular/core";
-import * as Facebook from "nativescript-facebook";
+import * as Facebook from "nativescript-facebook-7";
 
 @Component({
     selector: "login",
@@ -458,7 +458,7 @@ In the component implement the tap event handler in this case `login` method. It
 [pages/login/login.component.ts](https://github.com/NativeScript/nativescript-facebook/blob/master/demo-angular/app/pages/login/login.component.ts)
 ```TypeScript
 import { Component } from "@angular/core";
-import * as Facebook from "nativescript-facebook";
+import * as Facebook from "nativescript-facebook-7";
 
 @Component({
     selector: "login",
@@ -495,7 +495,7 @@ Implement `onLogout` event handler.
 [pages/home/home.component.ts](https://github.com/NativeScript/nativescript-facebook/blob/master/demo-angular/app/pages/home/home.component.ts)
 ```TypeScript
 import { Component } from "@angular/core";
-import * as Facebook from "nativescript-facebook";
+import * as Facebook from "nativescript-facebook-7";
 
 @Component({
     selector: "home",
@@ -528,7 +528,7 @@ In the component implement the tap event handler in this case `logout` method. I
 [pages/home/home.component.ts](https://github.com/NativeScript/nativescript-facebook/blob/master/demo-angular/app/pages/home/home.component.ts)
 ```TypeScript
 import { Component } from "@angular/core";
-import { logout as fbLogout } from "nativescript-facebook";
+import { logout as fbLogout } from "nativescript-facebook-7";
 
 @Component({
     selector: "home",
